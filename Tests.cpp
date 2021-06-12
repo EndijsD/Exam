@@ -3,12 +3,14 @@
 
 using namespace std;
 
+int arPirmo = 0;
+
 void jautajumi();
 
 int main(){
-	cout<<"\t\t\t\t\t\t\tTests\n\nTema:\nMainigie, to datu tipi, pamatdarbibas darbam ar tiem programmesanas valoda C++";
+	cout<<"\t\t\t\t\t\t\tTests\n\n\tTema:\n\tMainigie, to datu tipi, pamatdarbibas darbam ar tiem programmesanas valoda C++";
 	
-	cout<<"\n\nPiespiediet jebkuru taustinu, lai saktu testu!";
+	cout<<"\n\n\n\t\t\tPiespiediet jebkuru taustinu, lai saktu testu!";
 	
 	getch();
 	
@@ -16,11 +18,19 @@ int main(){
 	
 	jautajumi();
 	
+	system("CLS");
+	
+	cout<<"\n\n\t\tTu atbildeji uz "<<arPirmo<<" jautajumiem ar pirmo reizi!";
+	
+	cout<<"\n\n\n\tPiespiediet jebkuru taustinu, lai apturetu testu un aizvertu programmu!";
+	
+	getch();
+	
 	return 0;
 }
 
 void jautajumi(){
-	int x = 1, a;
+	int x = 1, a, i = 1;
 	bool answer = false;
 	
 	switch(x){
@@ -36,13 +46,17 @@ void jautajumi(){
 			cout<<"\n\n\t\tAtbilde:";
 			cin>>a;
 			
-			if(a == 2 || a == 4)
+			if(a == 2 || a == 4){
 				answer = true;
-			
+				if(i == 1)
+					arPirmo += 1;
+			}
+			i++;
 			}while(answer == false);
 			
 			answer = false;
 			x = 2;
+			i = 1;
 		
 		case 2:
 			do{
@@ -55,13 +69,17 @@ void jautajumi(){
 			cout<<"\n\n\t\tAtbilde:";
 			cin>>a;
 			
-			if(a == 3 || a == 4)
+			if(a == 3 || a == 4){
 				answer = true;
-			
+				if(i == 1)
+					arPirmo += 1;
+			}
+			i++;
 			}while(answer == false);
 			
 			answer = false;
 			x = 3;
+			i = 1;
 		
 		case 3:
 			do{
@@ -74,13 +92,17 @@ void jautajumi(){
 			cout<<"\n\n\t\tAtbilde:";
 			cin>>a;
 			
-			if(a == 3 || a == 4)
+			if(a == 3 || a == 4){
 				answer = true;
-			
+				if(i == 1)
+					arPirmo += 1;
+			}
+			i++;
 			}while(answer == false);
 			
 			answer = false;
 			x = 4;
+			i = 1;
 		
 		case 4:
 			do{
@@ -93,13 +115,17 @@ void jautajumi(){
 			cout<<"\n\n\t\tAtbilde:";
 			cin>>a;
 			
-			if(a == 1 || a == 3)
+			if(a == 1 || a == 3){
 				answer = true;
-			
+				if(i == 1)
+					arPirmo += 1;
+			}
+			i++;
 			}while(answer == false);
 			
 			answer = false;
 			x = 5;
+			i = 1;
 		
 		case 5:
 			do{
@@ -112,13 +138,17 @@ void jautajumi(){
 			cout<<"\n\n\t\tAtbilde:";
 			cin>>a;
 			
-			if(a == 3 || a == 4)
+			if(a == 3 || a == 4){
 				answer = true;
-			
+				if(i == 1)
+					arPirmo += 1;
+			}
+			i++;
 			}while(answer == false);
 			
 			answer = false;
 			x = 6;
+			i = 1;
 		
 		case 6:
 			do{
@@ -131,13 +161,17 @@ void jautajumi(){
 			cout<<"\n\n\t\tAtbilde:";
 			cin>>a;
 			
-			if(a == 2 || a == 3)
+			if(a == 2 || a == 3){
 				answer = true;
-			
+				if(i == 1)
+					arPirmo += 1;
+			}
+			i++;
 			}while(answer == false);
 			
 			answer = false;
 			x = 7;
+			i = 1;
 		
 		case 7:
 			do{
@@ -150,13 +184,17 @@ void jautajumi(){
 			cout<<"\n\n\t\tAtbilde:";
 			cin>>a;
 			
-			if(a == 1 || a == 4)
+			if(a == 1 || a == 4){
 				answer = true;
-			
+				if(i == 1)
+					arPirmo += 1;
+			}
+			i++;
 			}while(answer == false);
 			
 			answer = false;
 			x = 8;
+			i = 1;
 		
 		case 8:
 			do{
@@ -169,13 +207,17 @@ void jautajumi(){
 			cout<<"\n\n\t\tAtbilde:";
 			cin>>a;
 			
-			if(a == 3 || a == 4)
+			if(a == 3 || a == 4){
 				answer = true;
-			
+				if(i == 1)
+					arPirmo += 1;
+			}
+			i++;
 			}while(answer == false);
 			
 			answer = false;
 			x = 9;
+			i = 1;
 		
 		case 9:
 			do{
@@ -188,13 +230,17 @@ void jautajumi(){
 			cout<<"\n\n\t\tAtbilde:";
 			cin>>a;
 			
-			if(a == 3 || a == 4)
+			if(a == 3 || a == 4){
 				answer = true;
-			
+				if(i == 1)
+					arPirmo += 1;
+			}
+			i++;
 			}while(answer == false);
 			
 			answer = false;
 			x = 10;
+			i = 1;
 		
 		case 10:
 			do{
@@ -207,9 +253,12 @@ void jautajumi(){
 			cout<<"\n\n\t\tAtbilde:";
 			cin>>a;
 			
-			if(a == 1 || a == 4)
+			if(a == 1 || a == 4){
 				answer = true;
-			
+				if(i == 1)
+					arPirmo += 1;
+			}
+			i++;
 			}while(answer == false);
 	}
 }
