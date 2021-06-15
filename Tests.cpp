@@ -28,6 +28,9 @@ int main(){
 	cout<<"\n\n\t\tKatram testa uzdevumam (kopa 10) ir divi pareizi atbilzu varianti!";
 	//Programma tiek aptureta/apstadinata uz 5 sekundem
 	sleep(5);
+	//Parbauda vai ievade gaida un, ja ta, tiek izsaukta funkcija getch(), lai izmestu/atsacitos no rakstzimes - un atkartojas
+	while (kbhit())
+    	getch();
 	//Tiek notirits konsoles logs
 	system("CLS");
 	
